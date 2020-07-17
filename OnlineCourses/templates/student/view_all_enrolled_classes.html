@@ -21,13 +21,13 @@
         </tr>
         {% for x in data %}
             <tr>
-            <th width="300" id="h">{{ x.course_name }}</th>
-            <th width="250" id="h">FACULTY NAME</th>
-            <th width="150" id="h">START DATE</th>
-            <th width="150" id="h">CLASS TIMINGS</th>
-            <th width="150" id="h">FEE</th>
-            <th width="150" id="h">DURATION</th>
-            <th width="100" id="h"></th>
+            <td width="300" id="h">{{ x.course_name }}</td>
+            <td width="250" id="h">{{ x.tutor }}</td>
+            <td width="150" id="h">{{ x.start_date }}</td>
+            <td width="150" id="h">{{ x.class_time }}</td>
+            <td width="150" id="h">{{ x.fee }}</td>
+            <td width="150" id="h">{{ x.duration }}</td>
+            <td width="100" id="h">Cansel</td>
             </tr>
         {% endfor %}
 

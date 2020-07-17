@@ -148,9 +148,8 @@ def enroll_course(request):
     try:
         student = StudentInfo.objects.get(email=email)
         EnrolledCourses(course_id=cid,email=email).save()
-
         messages.success(request,'Enrolled')
-        return render(request,'student/view_all_enrolled_classes.html',{'student':student})
+        return redirect('view_all_enrolled_classes')
 
     except IntegrityError as ie:
         messages.error(request,ie)
@@ -159,7 +158,7 @@ def enroll_course(request):
 def view_all_enrolled_classes(request):
     email = request.GET.get('email')
     student = StudentInfo.objects.get(email=email)
-    data = EnrolledCourses.objects.filter(email=student).all()
+    data = EnrolledCourses.objects.filter(email=email).all()
     for x in data:
         cd = CourseInfo.objects.filter(course_id=x.course_id).all()
         return render(request,'student/view_all_enrolled_classes.html',{'student':student,'data':cd})
