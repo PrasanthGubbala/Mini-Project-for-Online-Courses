@@ -1,0 +1,46 @@
+{% extends 'common.html' %}
+{% block common %}
+{% include 'student/self_menu.html' %}
+    <style>
+    #h{
+        text-align: center;
+    }
+    </style>
+    <table align="center" border="1">
+        <tr>
+            <th style="text-align: center;padding: 10px" colspan="7"><u>All Enrolled Courses</u></th>
+        </tr>
+        <tr>
+            <th width="300" id="h">COURSE NAME</th>
+            <th width="250" id="h">FACULTY NAME</th>
+            <th width="150" id="h">START DATE</th>
+            <th width="150" id="h">CLASS TIMINGS</th>
+            <th width="150" id="h">FEE</th>
+            <th width="150" id="h">DURATION</th>
+            <th width="100" id="h"></th>
+        </tr>
+        {% for x in data %}
+            <tr>
+            <th width="300" id="h">{{ x.course_name }}</th>
+            <th width="250" id="h">FACULTY NAME</th>
+            <th width="150" id="h">START DATE</th>
+            <th width="150" id="h">CLASS TIMINGS</th>
+            <th width="150" id="h">FEE</th>
+            <th width="150" id="h">DURATION</th>
+            <th width="100" id="h"></th>
+            </tr>
+        {% endfor %}
+
+        {% if messages %}
+            <div class="alert alert-warning alert-dismissible fade show" role="alert">
+                {% for message in messages %}
+                    {{ message }}
+                {% endfor %}
+                <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+        {% endif %}
+    </table>
+
+{% endblock %}
