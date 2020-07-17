@@ -1,0 +1,21 @@
+{% extends 'common.html' %}
+{% block common %}
+    {% include 'student/student_menu.html' %}
+    {% load static %}
+
+
+
+    <table>
+        <tr>
+            <th>
+                <img src="{% static 'images/contact_us.png' %}">
+            </th>
+            <th>
+                {{ admin.name|upper }}<br>
+                City : {{ admin.city|capfirst }}<br>
+                Contact : {{ admin.contact }}
+            </th>
+        </tr>
+    </table>
+
+{% endblock %}

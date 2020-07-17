@@ -1,0 +1,34 @@
+{% extends 'common.html' %}
+{% block common %}
+    {% load static %}
+    <table align="center" border="0" style="padding: 100px">
+        <tr>
+            <th style="font-size: 30px;background: deepskyblue;color: white;text-align: center" colspan="2">ADMIN</th>
+        </tr>
+
+        <tr>
+            <th rowspan="4">
+                <img src="{% static 'images/admin login.png' %}" width="500" height="520">
+            </th>
+            <th style="text-align: center">
+                <form action="{% url 'check_admin' %}" method="post">
+                    {% csrf_token %}
+                    <u>Sign in</u><br><br>
+                    <input type="text" name="un" placeholder="Username" required><br><br>
+                    <input type="password" name="pw" placeholder="Password" required><br><br>
+                    <button type="submit">Login</button>
+                </form>
+                {% if messages %}
+                        <div class="alert alert-warning alert-dismissible fade show" role="alert">
+                           {% for message in messages %}
+                               {{ message }}
+                            {% endfor %}
+                          <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                          </button>
+                        </div>
+                {% endif %}
+            </th>
+        </tr>
+    </table>
+{% endblock %}

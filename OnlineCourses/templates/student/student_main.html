@@ -1,0 +1,38 @@
+{% extends 'common.html' %}
+{% block common %}
+    {% load static %}
+    {% include 'student/student_menu.html' %}
+    <style>
+    #class{
+        padding: 5px;
+    }
+    </style>
+
+    <table align="center" border="1">
+        <tr>
+            <th>
+                <img src="{% static 'images/student_home.png' %}" width="400" height="350">
+            </th>
+            <th>
+                <div style="text-align: center;padding: 10px"><u>Available Courses</u></div>
+
+                {% for course in courses %}
+                    <a href="#" class="card-link" id="class">
+                        <div class="card" style="width: 18rem;">
+                            <div class="card-body">
+                                <h5 class="card-title">{{ course.course_name|capfirst }}</h5>
+                                <h6 class="card-subtitle mb-2 text-muted">By Mr/Miss: {{ course.tutor|capfirst }}</h6>
+                                <h6 class="card-subtitle mb-2 text-muted">Date :{{ course.start_date|capfirst }}</h6>
+                                <h6 class="card-subtitle mb-2 text-muted">Time :{{ course.class_time|capfirst }}</h6>
+                                <h6 class="card-subtitle mb-2 text-muted">Fee :{{ course.fee|capfirst }}</h6>
+                                <h6 class="card-subtitle mb-2 text-muted">Duration :{{ course.duration|capfirst }}</h6>
+                            </div>
+                         </div>
+                    </a>
+                {% endfor %}
+
+            </th>
+        </tr>
+    </table>
+
+{% endblock %}

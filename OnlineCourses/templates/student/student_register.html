@@ -1,0 +1,31 @@
+{% extends 'common.html' %}
+{% block common %}
+    {% include 'student/student_menu.html' %}
+    <br><br><br>
+
+        <table align="center" border="1">
+            <form action="{% url 'save_student_registration' %}" method="post">
+            {% csrf_token %}
+                <tr><th style="text-align: center;font-size: 30px">Student Register</th></tr>
+                <tr><th><input type="text" name="name" placeholder=" Enter Student Name" required></th></tr>
+                <tr><th><input type="number" name="contact" placeholder="Enter Contact Number" required></th></tr>
+                <tr><th><input type="email" name="email" placeholder="Enter Email" required></th></tr>
+                <tr><th><input type="password" name="password" placeholder="Enter Password" required></th></tr>
+                <tr><th><input type="password" name="password2" placeholder="Confirm Password" required></th></tr>
+                <tr><th style="text-align: center"><button type="submit">Register</button> </th></tr>
+            </form>
+            {% if messages %}
+                {% for message in messages %}
+                    <h5 align="center">
+                        <div class="alert alert-warning alert-dismissible fade show" role="alert">
+                          {{ message }}
+                          <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                          </button>
+                        </div>
+                    </h5>
+                {% endfor %}
+            {% endif %}
+        </table>
+
+{% endblock %}

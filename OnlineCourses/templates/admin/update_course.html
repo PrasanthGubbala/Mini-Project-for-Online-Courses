@@ -1,0 +1,35 @@
+{% extends 'common.html' %}
+{% block common %}
+{% include 'admin/admin_menu.html' %}
+    <style>
+        #th{
+            padding: 10px
+        }
+    </style>
+    <form action="{% url 'update_course_save' %}" method="post">
+        {% csrf_token %}
+        <table align="center" border="0">
+            <tr><th style="text-align: center" id="th"><u>UPDATE CLASS DETAILS</u></th></tr>
+            <tr><th><input type="text" placeholder="Course" name="course" required value="{{ course.course_name }}"></th></tr>
+            <tr><th><input type="text" placeholder="Faculty Name" name="tutor" required value="{{ course.tutor }}"></th></tr>
+            <tr><th><input type="date" placeholder="Date" name="date" required value="{{ course.start_date }}"></th></tr>
+            <tr><th><input type="time" placeholder="Time" name="time" required value="{{ course.class_time }}"></th></tr>
+            <tr><th><input type="number" placeholder="Fee" name="fee" required value="{{ course.fee }}"></th></tr>
+            <tr><th><input type="number" placeholder="Duration" name="duration" required value="{{ course.duration }}"></th></tr>
+            <tr><th><input type="hidden" name="id" value="{{ course.course_id }}"></th></tr>
+            <tr><th><button type="submit">Schedule</button></th></tr>
+        </table>
+    </form>
+    {% if messages %}
+        {% for message in messages %}
+            <h5 align="center">
+                <div class="alert alert-warning alert-dismissible fade show" role="alert">
+                  {{ message }}
+                  <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+            </h5>
+        {% endfor %}
+    {% endif %}
+{% endblock %}

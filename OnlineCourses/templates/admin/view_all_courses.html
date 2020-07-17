@@ -1,0 +1,68 @@
+{% extends 'common.html' %}
+{% block common %}
+{% include 'admin/admin_menu.html' %}
+    {% load static %}
+    <style>
+        #head{
+            text-align: center;
+            font-size: 25px;
+            background: cadetblue;
+            color: white;
+        }
+    #h{
+        text-align: center;
+    }
+    </style>
+
+    <table align="center" border="2">
+        <tr><th id="head" colspan="9">ALL SCHEDULED CLASSES</th></tr>
+        <tr>
+            <th width="80" id="h">COURSE ID</th>
+            <th width="300" id="h">COURSE NAME</th>
+            <th width="250" id="h">FACULTY NAME</th>
+            <th width="150" id="h">START DATE</th>
+            <th width="150" id="h">CLASS TIMINGS</th>
+            <th width="150" id="h">FEE</th>
+            <th width="150" id="h">DURATION</th>
+            <th width="100" id="h">UPDATE</th>
+            <th width="100" id="h">DELETE</th>
+        </tr>
+        {% for x in data %}
+            <tr>
+            <td width="80" id="h">{{ x.course_id }}</td>
+            <td width="300" id="h">{{ x.course_name }}</td>
+            <td width="250" id="h">{{ x.tutor }}</td>
+            <td width="150" id="h">{{ x.start_date }}</td>
+            <td width="150" id="h">{{ x.class_time }}</td>
+            <td width="150" id="h">{{ x.fee }}</td>
+            <td width="150" id="h">{{ x.duration }}</td>
+            <td width="100" id="h">
+                <a href="{% url 'update_course' %}?cid={{ x.course_id }}">
+                    <img src="{% static 'images/update.png' %}" width="50" height="50">
+                </a>
+            </td>
+            <td width="100" id="h">
+                <a href="{% url 'delete_course' %}?cid={{ x.course_id }}">
+                    <img src="{% static 'images/delete.png' %}" width="50" height="50">
+                </a>
+            </td>
+        </tr>
+        {% endfor %}
+        <tr>
+            <th colspan="9">
+                {% if messages %}
+                    {% for message in messages %}
+                        <h5 align="center">
+                            <div class="alert alert-warning alert-dismissible fade show" role="alert">
+                              {{ message }}
+                              <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                              </button>
+                            </div>
+                         </h5>
+                    {% endfor %}
+                {% endif %}
+            </th>
+        </tr>
+    </table>
+{% endblock %}
