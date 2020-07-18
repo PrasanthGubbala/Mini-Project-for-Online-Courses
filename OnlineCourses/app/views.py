@@ -78,6 +78,9 @@ def update_course_save(request):
     messages.success(request,'data updated successfully')
     return redirect('view_all_courses')
 
+def admin_logout(request):
+    return redirect('admin')
+
 #student panel
 def student_main(request):
     courses = CourseInfo.objects.all()
@@ -148,17 +151,44 @@ def enroll_course(request):
     try:
         student = StudentInfo.objects.get(email=email)
         EnrolledCourses(course_id=cid,email=email).save()
+        qs = CourseInfo.objects.all()
         messages.success(request,'Enrolled')
-        return redirect('view_all_enrolled_classes')
+        return render(request,'student/enroll_the_course.html',{'student':student,'data':qs})
 
     except IntegrityError as ie:
         messages.error(request,ie)
+        return redirect('enroll_the_course')
+    except StudentInfo.DoesNotExist as de:
+        messages.error(request,de)
         return redirect('enroll_the_course')
 
 def view_all_enrolled_classes(request):
     email = request.GET.get('email')
     student = StudentInfo.objects.get(email=email)
     data = EnrolledCourses.objects.filter(email=email).all()
+    list = []
     for x in data:
-        cd = CourseInfo.objects.filter(course_id=x.course_id).all()
-        return render(request,'student/view_all_enrolled_classes.html',{'student':student,'data':cd})
+        cd = CourseInfo.objects.get(course_id=x.course_id)
+        list.append(cd)
+    return render(request,'student/view_all_enrolled_classes.html',{'student':student,'data':list})
+
+def cansel_course(request):
+    cid = request.GET.get('cid')
+    email = request.GET.get('email')
+    try:
+        cc = EnrolledCourses.objects.filter(email=email,course_id=cid).delete()
+        messages.success(request, 'Canselled the class')
+        return view_all_enrolled_classes(request)
+
+    except EnrolledCourses.DoesNotExist as de:
+        messages.error(request, de)
+        return redirect('view_all_enrolled_classes')
+    except CourseInfo.DoesNotExist as de:
+        messages.error(request, de)
+        return redirect('view_all_enrolled_classes')
+
+
+def student_logout(request):
+    return redirect('student_main')
+
+

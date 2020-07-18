@@ -30,6 +30,7 @@ urlpatterns = [
     path('delete_course/',views.delete_course,name='delete_course'),
     path('update_course/',views.update_course,name='update_course'),
     path('update_course_save/', views.update_course_save, name='update_course_save'),
+    path('admin_logout/',views.admin_logout,name='admin_logout'),
 
     #student panel
     path('',views.student_main,name='student_main'),
@@ -42,4 +43,6 @@ urlpatterns = [
     path('enroll_the_course/',views.enroll_the_course,name='enroll_the_course'),
     path('enroll_course/',views.enroll_course,name='enroll_course'),
     path('view_all_enrolled_classes/',views.view_all_enrolled_classes,name='view_all_enrolled_classes'),
+    path('cansel_course/',views.cansel_course,name='cansel_course'),
+    path('student_logout/',views.student_logout,name='student_logout'),
 ]

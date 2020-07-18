@@ -2,7 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4fc93b51-4b9b-4084-85f3-e02b19fc0978" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/OnlineCourses/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/OnlineCourses/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/admin/admin_menu.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/admin/admin_menu.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/student/enroll_the_course.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/student/enroll_the_course.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/student/self_menu.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/student/self_menu.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/student/view_all_enrolled_classes.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/student/view_all_enrolled_classes.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -12,7 +17,7 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="CoverageDataManager">
-    <SUITE FILE_PATH="coverage/OnlineCourses$Test__templates_student.coverage" NAME="Test: templates.student Coverage Results" MODIFIED="1594989610799" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
+    <SUITE FILE_PATH="coverage/OnlineCourses$Test__templates_student.coverage" NAME="Test: templates.student Coverage Results" MODIFIED="1595077086388" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
   </component>
   <component name="DatabaseView">
     <option name="SHOW_INTERMEDIATE" value="true" />
@@ -48,39 +53,40 @@
     <session id="561165202">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="2" />
+          <entry key="project.closed" value="3" />
           <entry key="project.open.time.2" value="1" />
           <entry key="project.open.time.20" value="1" />
           <entry key="project.open.time.24" value="1" />
-          <entry key="project.opened" value="3" />
+          <entry key="project.open.time.32" value="1" />
+          <entry key="project.opened" value="4" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="app_enrolledcourses" value="3" />
-          <entry key="html" value="4" />
+          <entry key="html" value="6" />
           <entry key="py" value="5" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="Database Element" value="3" />
-          <entry key="HTML" value="4" />
+          <entry key="HTML" value="6" />
           <entry key="Python" value="5" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="html" value="163" />
-          <entry key="py" value="430" />
-          <entry key="txt" value="13" />
+          <entry key="html" value="325" />
+          <entry key="py" value="885" />
+          <entry key="txt" value="58" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="HTML" value="163" />
-          <entry key="PLAIN_TEXT" value="13" />
-          <entry key="Python" value="430" />
+          <entry key="HTML" value="325" />
+          <entry key="PLAIN_TEXT" value="58" />
+          <entry key="Python" value="885" />
         </counts>
       </usages-collector>
     </session>
@@ -90,8 +96,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/OnlineCourses/urls.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="416">
-              <caret line="42" column="36" selection-start-line="42" selection-start-column="36" selection-end-line="42" selection-end-column="36" />
+            <state relative-caret-position="355">
+              <caret line="32" column="39" lean-forward="true" selection-start-line="32" selection-start-column="39" selection-end-line="32" selection-end-column="39" />
             </state>
           </provider>
         </entry>
@@ -99,22 +105,27 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="418">
-              <caret line="152" lean-forward="true" selection-start-line="152" selection-end-line="152" />
+            <state relative-caret-position="566">
+              <caret line="182" column="46" lean-forward="true" selection-start-line="182" selection-start-column="46" selection-end-line="182" selection-end-column="46" />
               <folding>
                 <element signature="e#0#44#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/templates/student/enroll_the_course.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="403">
-              <caret line="30" column="42" selection-start-line="30" selection-start-column="42" selection-end-line="30" selection-end-column="42" />
-              <folding>
-                <element signature="n#if#0;n#!!top" />
+                <element signature="e#229#277#0" />
+                <element signature="e#309#817#0" />
+                <element signature="e#848#996#0" />
+                <element signature="e#1035#1193#0" />
+                <element signature="e#1225#1812#0" />
+                <element signature="e#1849#2013#0" />
+                <element signature="e#2047#2263#0" />
+                <element signature="e#2297#2513#0" />
+                <element signature="e#2552#3050#0" />
+                <element signature="e#3083#3100#0" />
+                <element signature="e#3098#3209#0" />
+                <element signature="e#3246#3301#0" />
+                <element signature="e#3347#4092#0" />
+                <element signature="e#4126#4178#0" />
+                <element signature="e#4218#4758#0" />
+                <element signature="e#4789#4889#0" />
+                <element signature="e#4927#5092#0" />
               </folding>
             </state>
           </provider>
@@ -132,10 +143,13 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/templates/student/view_all_enrolled_classes.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="480">
-              <caret line="30" column="17" lean-forward="true" selection-start-line="30" selection-start-column="17" selection-end-line="30" selection-end-column="17" />
+            <state relative-caret-position="357">
+              <caret line="32" column="17" lean-forward="true" selection-start-line="32" selection-start-column="17" selection-end-line="32" selection-end-column="17" />
               <folding>
                 <element signature="n#if#0;n#!!top" />
+                <element signature="e#1320#1355#0#HTML" />
+                <element signature="e#1337#1376#0#HTML" />
+                <element signature="e#1358#1739#0#HTML" />
               </folding>
             </state>
           </provider>
@@ -144,8 +158,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/templates/student/self_menu.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="230">
-              <caret line="10" column="49" lean-forward="true" selection-start-line="10" selection-start-column="49" selection-end-line="10" selection-end-column="49" />
+            <state relative-caret-position="305">
+              <caret line="13" column="52" lean-forward="true" selection-start-line="13" selection-start-column="52" selection-end-line="13" selection-end-column="52" />
             </state>
           </provider>
         </entry>
@@ -160,9 +174,11 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/app/forms.py" />
-        <option value="$PROJECT_DIR$/OnlineCourses/urls.py" />
         <option value="$PROJECT_DIR$/app/models.py" />
         <option value="$PROJECT_DIR$/templates/student/self_menu.html" />
+        <option value="$PROJECT_DIR$/templates/admin/admin_menu.html" />
+        <option value="$PROJECT_DIR$/OnlineCourses/urls.py" />
+        <option value="$PROJECT_DIR$/templates/student/enroll_the_course.html" />
         <option value="$PROJECT_DIR$/templates/student/view_all_enrolled_classes.html" />
         <option value="$PROJECT_DIR$/app/views.py" />
       </list>
@@ -253,7 +269,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Django tests.Test: templates.student">
+  <component name="RunManager" selected="Django server.OnlineCourses">
     <configuration name="Test: templates.student" type="DjangoTestsConfigurationType" factoryName="Django tests" temporary="true">
       <module name="OnlineCourses" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -326,21 +342,31 @@
       <option name="project" value="LOCAL" />
       <updated>1594992816263</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="in this commit i did the enrollment page">
+      <created>1594993862499</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1594993862499</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TestHistory">
     <history-entry file="Test__templates_student - 2020.07.17 at 18h 10m 25s.xml">
       <configuration name="Test: templates.student" configurationId="DjangoTestsConfigurationType" />
     </history-entry>
+    <history-entry file="Test__templates_student - 2020.07.18 at 18h 28m 25s.xml">
+      <configuration name="Test: templates.student" configurationId="DjangoTestsConfigurationType" />
+    </history-entry>
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.17919463" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.1818792" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
-      <window_info anchor="bottom" id="Database Console" weight="0.3286119" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.3286119" />
@@ -354,6 +380,7 @@
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
       <window_info anchor="bottom" id="Terminal" order="11" weight="0.3286119" />
       <window_info anchor="bottom" id="Python Console" order="12" />
+      <window_info anchor="bottom" id="Database Console" order="13" weight="0.3286119" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -369,7 +396,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="whole project" />
-    <option name="LAST_COMMIT_MESSAGE" value="whole project" />
+    <MESSAGE value="in this commit i did the enrollment page" />
+    <option name="LAST_COMMIT_MESSAGE" value="in this commit i did the enrollment page" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/app/forms.py">
@@ -389,10 +417,24 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/student/view_all_enrolled_classes.html">
+    <entry file="file://$PROJECT_DIR$/templates/admin/admin_menu.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="480">
-          <caret line="30" column="17" lean-forward="true" selection-start-line="30" selection-start-column="17" selection-end-line="30" selection-end-column="17" />
+        <state relative-caret-position="400">
+          <caret line="16" column="58" selection-start-line="16" selection-start-column="58" selection-end-line="16" selection-end-column="58" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/OnlineCourses/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="355">
+          <caret line="32" column="39" lean-forward="true" selection-start-line="32" selection-start-column="39" selection-end-line="32" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/student/enroll_the_course.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="191">
+          <caret line="25" column="8" lean-forward="true" selection-start-line="25" selection-start-column="8" selection-end-line="25" selection-end-column="8" />
           <folding>
             <element signature="n#if#0;n#!!top" />
           </folding>
@@ -408,34 +450,47 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/templates/student/self_menu.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="230">
-          <caret line="10" column="49" lean-forward="true" selection-start-line="10" selection-start-column="49" selection-end-line="10" selection-end-column="49" />
+        <state relative-caret-position="305">
+          <caret line="13" column="52" lean-forward="true" selection-start-line="13" selection-start-column="52" selection-end-line="13" selection-end-column="52" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/student/enroll_the_course.html">
+    <entry file="file://$PROJECT_DIR$/templates/student/view_all_enrolled_classes.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="403">
-          <caret line="30" column="42" selection-start-line="30" selection-start-column="42" selection-end-line="30" selection-end-column="42" />
+        <state relative-caret-position="357">
+          <caret line="32" column="17" lean-forward="true" selection-start-line="32" selection-start-column="17" selection-end-line="32" selection-end-column="17" />
           <folding>
             <element signature="n#if#0;n#!!top" />
+            <element signature="e#1320#1355#0#HTML" />
+            <element signature="e#1337#1376#0#HTML" />
+            <element signature="e#1358#1739#0#HTML" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/OnlineCourses/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="416">
-          <caret line="42" column="36" selection-start-line="42" selection-start-column="36" selection-end-line="42" selection-end-column="36" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="418">
-          <caret line="152" lean-forward="true" selection-start-line="152" selection-end-line="152" />
+        <state relative-caret-position="566">
+          <caret line="182" column="46" lean-forward="true" selection-start-line="182" selection-start-column="46" selection-end-line="182" selection-end-column="46" />
           <folding>
             <element signature="e#0#44#0" expanded="true" />
+            <element signature="e#229#277#0" />
+            <element signature="e#309#817#0" />
+            <element signature="e#848#996#0" />
+            <element signature="e#1035#1193#0" />
+            <element signature="e#1225#1812#0" />
+            <element signature="e#1849#2013#0" />
+            <element signature="e#2047#2263#0" />
+            <element signature="e#2297#2513#0" />
+            <element signature="e#2552#3050#0" />
+            <element signature="e#3083#3100#0" />
+            <element signature="e#3098#3209#0" />
+            <element signature="e#3246#3301#0" />
+            <element signature="e#3347#4092#0" />
+            <element signature="e#4126#4178#0" />
+            <element signature="e#4218#4758#0" />
+            <element signature="e#4789#4889#0" />
+            <element signature="e#4927#5092#0" />
           </folding>
         </state>
       </provider>

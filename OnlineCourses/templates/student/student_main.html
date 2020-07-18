@@ -17,7 +17,7 @@
                 <div style="text-align: center;padding: 10px"><u>Available Courses</u></div>
 
                 {% for course in courses %}
-                    <a href="#" class="card-link" id="class">
+                    <a href="{% url 'student_login' %}" class="card-link" id="class">
                         <div class="card" style="width: 18rem;">
                             <div class="card-body">
                                 <h5 class="card-title">{{ course.course_name|capfirst }}</h5>
