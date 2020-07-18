@@ -3,12 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="4fc93b51-4b9b-4084-85f3-e02b19fc0978" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/OnlineCourses/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/OnlineCourses/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/admin/admin_menu.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/admin/admin_menu.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/student/enroll_the_course.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/student/enroll_the_course.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/student/self_menu.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/student/self_menu.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/student/view_all_enrolled_classes.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/student/view_all_enrolled_classes.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -64,28 +58,28 @@
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="app_enrolledcourses" value="3" />
-          <entry key="html" value="6" />
+          <entry key="html" value="7" />
           <entry key="py" value="5" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="Database Element" value="3" />
-          <entry key="HTML" value="6" />
+          <entry key="HTML" value="7" />
           <entry key="Python" value="5" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="html" value="325" />
+          <entry key="html" value="332" />
           <entry key="py" value="885" />
-          <entry key="txt" value="58" />
+          <entry key="txt" value="281" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="HTML" value="325" />
-          <entry key="PLAIN_TEXT" value="58" />
+          <entry key="HTML" value="332" />
+          <entry key="PLAIN_TEXT" value="281" />
           <entry key="Python" value="885" />
         </counts>
       </usages-collector>
@@ -96,8 +90,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/OnlineCourses/urls.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="355">
-              <caret line="32" column="39" lean-forward="true" selection-start-line="32" selection-start-column="39" selection-end-line="32" selection-end-column="39" />
+            <state relative-caret-position="455">
+              <caret line="39" column="72" lean-forward="true" selection-start-line="39" selection-start-column="72" selection-end-line="39" selection-end-column="72" />
             </state>
           </provider>
         </entry>
@@ -105,8 +99,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="566">
-              <caret line="182" column="46" lean-forward="true" selection-start-line="182" selection-start-column="46" selection-end-line="182" selection-end-column="46" />
+            <state relative-caret-position="415">
+              <caret line="131" lean-forward="true" selection-start-line="131" selection-end-line="131" />
               <folding>
                 <element signature="e#0#44#0" expanded="true" />
                 <element signature="e#229#277#0" />
@@ -119,7 +113,6 @@
                 <element signature="e#2297#2513#0" />
                 <element signature="e#2552#3050#0" />
                 <element signature="e#3083#3100#0" />
-                <element signature="e#3098#3209#0" />
                 <element signature="e#3246#3301#0" />
                 <element signature="e#3347#4092#0" />
                 <element signature="e#4126#4178#0" />
@@ -181,6 +174,7 @@
         <option value="$PROJECT_DIR$/templates/student/enroll_the_course.html" />
         <option value="$PROJECT_DIR$/templates/student/view_all_enrolled_classes.html" />
         <option value="$PROJECT_DIR$/app/views.py" />
+        <option value="$PROJECT_DIR$/templates/student/student_main.html" />
       </list>
     </option>
   </component>
@@ -349,7 +343,14 @@
       <option name="project" value="LOCAL" />
       <updated>1594993862499</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="in this commit i did the changes of view_enrolled page,enroll,cancel the enrollment. finally i did my whole project. this is the complete OnlineCourses project. in future i will do ajax call also.">
+      <created>1595082737643</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1595082737643</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -361,8 +362,7 @@
     </history-entry>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
-    <editor active="true" />
+    <frame x="-7" y="-7" width="1550" height="838" extended-state="7" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.1818792" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -397,7 +397,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="whole project" />
     <MESSAGE value="in this commit i did the enrollment page" />
-    <option name="LAST_COMMIT_MESSAGE" value="in this commit i did the enrollment page" />
+    <MESSAGE value="in this commit i did the changes of view_enrolled page,enroll,cancel the enrollment. finally i did my whole project. this is the complete OnlineCourses project. in future i will do ajax call also." />
+    <option name="LAST_COMMIT_MESSAGE" value="in this commit i did the changes of view_enrolled page,enroll,cancel the enrollment. finally i did my whole project. this is the complete OnlineCourses project. in future i will do ajax call also." />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/app/forms.py">
@@ -421,13 +422,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="400">
           <caret line="16" column="58" selection-start-line="16" selection-start-column="58" selection-end-line="16" selection-end-column="58" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/OnlineCourses/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="355">
-          <caret line="32" column="39" lean-forward="true" selection-start-line="32" selection-start-column="39" selection-end-line="32" selection-end-column="39" />
         </state>
       </provider>
     </entry>
@@ -468,10 +462,24 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/OnlineCourses/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="455">
+          <caret line="39" column="72" lean-forward="true" selection-start-line="39" selection-start-column="72" selection-end-line="39" selection-end-column="72" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/student/student_main.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="475">
+          <caret line="25" column="21" selection-start-line="25" selection-start-column="21" selection-end-line="25" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="566">
-          <caret line="182" column="46" lean-forward="true" selection-start-line="182" selection-start-column="46" selection-end-line="182" selection-end-column="46" />
+        <state relative-caret-position="415">
+          <caret line="131" lean-forward="true" selection-start-line="131" selection-end-line="131" />
           <folding>
             <element signature="e#0#44#0" expanded="true" />
             <element signature="e#229#277#0" />
@@ -484,7 +492,6 @@
             <element signature="e#2297#2513#0" />
             <element signature="e#2552#3050#0" />
             <element signature="e#3083#3100#0" />
-            <element signature="e#3098#3209#0" />
             <element signature="e#3246#3301#0" />
             <element signature="e#3347#4092#0" />
             <element signature="e#4126#4178#0" />
