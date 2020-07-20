@@ -2,11 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4fc93b51-4b9b-4084-85f3-e02b19fc0978" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/app/static/js/ajaxcalls.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/OnlineCourses/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/OnlineCourses/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/student/student_register.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/student/student_register.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -84,14 +80,14 @@
           <entry key="html" value="491" />
           <entry key="js" value="730" />
           <entry key="py" value="1350" />
-          <entry key="txt" value="281" />
+          <entry key="txt" value="617" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="HTML" value="491" />
           <entry key="JavaScript" value="730" />
-          <entry key="PLAIN_TEXT" value="281" />
+          <entry key="PLAIN_TEXT" value="617" />
           <entry key="Python" value="1350" />
         </counts>
       </usages-collector>
@@ -111,41 +107,11 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="491">
-              <caret line="217" column="30" lean-forward="true" selection-start-line="217" selection-start-column="30" selection-end-line="217" selection-end-column="30" />
+            <state relative-caret-position="305">
+              <caret line="209" column="24" lean-forward="true" selection-start-line="209" selection-start-column="24" selection-end-line="209" selection-end-column="24" />
               <folding>
                 <element signature="e#0#36#0" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/templates/student/student_register.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="580">
-              <caret line="43" column="23" lean-forward="true" selection-start-line="43" selection-start-column="23" selection-end-line="43" selection-end-column="23" />
-              <folding>
-                <element signature="n#if#0;n#!!top" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/static/js/ajaxcalls.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="550">
-              <caret line="22" column="42" selection-start-line="22" selection-start-column="42" selection-end-line="22" selection-end-column="42" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="das://641bf13a-f10b-4149-8ed1-a93cc201dd32/schema/main/table/app_studentinfo">
-          <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-            <state>
-              <filtering enabled="true" />
             </state>
           </provider>
         </entry>
@@ -206,40 +172,6 @@
             <path>
               <item name="OnlineCourses" type="b2602c69:ProjectViewProjectNode" />
               <item name="OnlineCourses" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="OnlineCourses" type="b2602c69:ProjectViewProjectNode" />
-              <item name="OnlineCourses" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="OnlineCourses" type="b2602c69:ProjectViewProjectNode" />
-              <item name="OnlineCourses" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="static" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="OnlineCourses" type="b2602c69:ProjectViewProjectNode" />
-              <item name="OnlineCourses" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="static" type="462c0819:PsiDirectoryNode" />
-              <item name="js" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="OnlineCourses" type="b2602c69:ProjectViewProjectNode" />
-              <item name="OnlineCourses" type="462c0819:PsiDirectoryNode" />
-              <item name="OnlineCourses" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="OnlineCourses" type="b2602c69:ProjectViewProjectNode" />
-              <item name="OnlineCourses" type="462c0819:PsiDirectoryNode" />
-              <item name="templates" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="OnlineCourses" type="b2602c69:ProjectViewProjectNode" />
-              <item name="OnlineCourses" type="462c0819:PsiDirectoryNode" />
-              <item name="templates" type="462c0819:PsiDirectoryNode" />
-              <item name="student" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -373,7 +305,14 @@
       <option name="project" value="LOCAL" />
       <updated>1595082829701</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="In this commit i built an ajax call for database validations. i wrote an ajax call for student registration table. so in student registration there are two fields are unique those are contact,email for these two fields i did the ajax call.">
+      <created>1595260926647</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1595260926647</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -385,7 +324,7 @@
     </history-entry>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
+    <frame x="-7" y="-7" width="1550" height="838" extended-state="7" />
     <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.19261745" />
@@ -422,7 +361,8 @@
     <MESSAGE value="whole project" />
     <MESSAGE value="in this commit i did the enrollment page" />
     <MESSAGE value="in this commit i did the changes of view_enrolled page,enroll,cancel the enrollment. finally i did my whole project. this is the complete OnlineCourses project. in future i will do ajax call also." />
-    <option name="LAST_COMMIT_MESSAGE" value="in this commit i did the changes of view_enrolled page,enroll,cancel the enrollment. finally i did my whole project. this is the complete OnlineCourses project. in future i will do ajax call also." />
+    <MESSAGE value="In this commit i built an ajax call for database validations. i wrote an ajax call for student registration table. so in student registration there are two fields are unique those are contact,email for these two fields i did the ajax call." />
+    <option name="LAST_COMMIT_MESSAGE" value="In this commit i built an ajax call for database validations. i wrote an ajax call for student registration table. so in student registration there are two fields are unique those are contact,email for these two fields i did the ajax call." />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/app/forms.py">
@@ -495,23 +435,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/static/js/ajaxcalls.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="550">
-          <caret line="22" column="42" selection-start-line="22" selection-start-column="42" selection-end-line="22" selection-end-column="42" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/student/student_register.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="580">
-          <caret line="43" column="23" lean-forward="true" selection-start-line="43" selection-start-column="23" selection-end-line="43" selection-end-column="23" />
-          <folding>
-            <element signature="n#if#0;n#!!top" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/OnlineCourses/urls.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="480">
@@ -519,10 +442,27 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/app/static/js/ajaxcalls.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="375">
+          <caret line="22" column="42" selection-start-line="22" selection-start-column="42" selection-end-line="22" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/student/student_register.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="12" column="6" lean-forward="true" selection-start-line="12" selection-start-column="6" selection-end-line="12" selection-end-column="6" />
+          <folding>
+            <element signature="n#if#0;n#!!top" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="491">
-          <caret line="217" column="30" lean-forward="true" selection-start-line="217" selection-start-column="30" selection-end-line="217" selection-end-column="30" />
+        <state relative-caret-position="305">
+          <caret line="209" column="24" lean-forward="true" selection-start-line="209" selection-start-column="24" selection-end-line="209" selection-end-column="24" />
           <folding>
             <element signature="e#0#36#0" expanded="true" />
           </folding>
