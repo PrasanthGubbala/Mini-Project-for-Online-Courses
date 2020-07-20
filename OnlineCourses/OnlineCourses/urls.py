@@ -45,4 +45,8 @@ urlpatterns = [
     path('view_all_enrolled_classes/',views.view_all_enrolled_classes,name='view_all_enrolled_classes'),
     path('cansel_course/',views.cansel_course,name='cansel_course'),
     path('student_logout/',views.student_logout,name='student_logout'),
+
+    #ajax calls
+    path('checkContact/',views.checkContact,name='checkContact'),
+    path('checkEmail/',views.checkEmail,name='checkEmail'),
 ]

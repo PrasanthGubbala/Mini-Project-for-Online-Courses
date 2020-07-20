@@ -1,7 +1,10 @@
+from django.http import JsonResponse
 from django.shortcuts import render,redirect
 from django.contrib import messages
 from app.models import Admin,CourseInfo,StudentInfo,EnrolledCourses
 from django.db.utils import IntegrityError
+from django.views.decorators.csrf import csrf_exempt
+
 #admin panel
 def admin(request):
     return render(request, 'admin/admin_login.html')
@@ -187,8 +190,29 @@ def cansel_course(request):
         messages.error(request, de)
         return redirect('view_all_enrolled_classes')
 
-
 def student_logout(request):
     return redirect('student_main')
 
+#ajax calls
 
+@csrf_exempt
+def checkContact(request):
+    contact = request.POST.get('key')
+    try:
+        StudentInfo.objects.get(contact=contact)
+        d = {'error':'INVALID INPUT'}
+        return JsonResponse(d)
+    except StudentInfo.DoesNotExist:
+        d = {'message':'VALID'}
+        return JsonResponse(d)
+
+@csrf_exempt
+def checkEmail(request):
+    email = request.POST.get('key')
+    try:
+        StudentInfo.objects.get(email=email)
+        d = {'error':'INVALID INPUT'}
+        return JsonResponse(d)
+    except StudentInfo.DoesNotExist:
+        d = {'message':'VALID'}
+        return JsonResponse(d)
